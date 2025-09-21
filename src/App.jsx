@@ -17,7 +17,6 @@ function App() {
       <Link to="/properties">Properties List</Link>
       <br />
 
-      <button>This is Some Hot App!!!</button>
       <br />
       <Routes>
         <Route path="/" element={<HomePage />} />

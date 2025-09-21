@@ -9,7 +9,9 @@ const HomePage = () => {
       <h3>This is Home Page Here</h3>
       <p>
         We are introducing the great new ABnC rater app for you to do some
-        rating of your user experience
+        rating of your user experience in the properties we cover.
+        <br />
+        Check out these properties below, visit and come back to review them!
       </p>
       <br />
       <img src={finehouse1} width="360" height="240" />

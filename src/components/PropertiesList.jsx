@@ -11,6 +11,7 @@ const PropertiesList = ({ property_id }) => {
           return { property_id, name, location, price_per_night, host };
         }
       );
+
       setPropertie(PropertiesListed);
     });
   }, []);
@@ -21,14 +22,16 @@ const PropertiesList = ({ property_id }) => {
         {propertie.map(
           ({ property_id, name, location, price_per_night, host }) => {
             return (
-              <li key={property_id}>
-                <p>{host}</p>
-                <Link to={`/properties/:${property_id}`}>
+              <div key={property_id}>
+                <p>Host: {host}</p>
+                <Link to={`/properties/${property_id}`}>
                   <h3>{name}</h3>
                 </Link>
-                <p>{location}</p>
-                <p>{price_per_night}</p>
-              </li>
+                <p> Location: {location}</p>
+                <p>Price per night (£): {price_per_night}</p>
+                <br />
+                <br />
+              </div>
             );
           }
         )}
